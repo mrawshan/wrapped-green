@@ -1,0 +1,279 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.main-container {
+	/* height: 200px; */
+	max-width: 2300px;
+	overflow-x: hidden;
+	/* margin: 0 auto 10px auto; */
+}
+
+nav {
+	padding: 0 40px 0 40px;
+}
+
+nav .logo {
+	width: 130px;
+	margin: 8px 0 8px 0;
+}
+
+nav .nav-items {
+	width: fit-content;
+	display: inline;
+	float: right;
+	font-size: larger;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+nav .nav-items a {
+	margin-right: 10px;
+}
+
+/* Section Main */
+section.main {
+	overflow: hidden;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(219, 255, 224, 1) 100%);
+}
+
+section.main .col-md-6:first-child {
+	padding: 150px 40px 0 60px;
+}
+
+section.main h1 {
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+.button {
+	border-radius: 10px;
+	padding: 10px 25px 10px 25px;
+	border: none;
+	background-color: orange;
+	color: white;
+	display: block;
+	width: fit-content;
+	margin-top: 20px;
+}
+
+.main-cir {
+	position: relative;
+	top: -13rem;
+	left: 2rem;
+	height: 50rem;
+	width: 50rem;
+	background-color: #387546;
+	border-radius: 50%;
+}
+
+.main-cir img {
+	position: absolute;
+	top: 70%;
+	right: 70%;
+	transform: translate(70%, -70%);
+	width: 60%;
+}
+
+section.main {
+	position: relative;
+}
+
+.img-chilli {
+	width: 200px;
+	position: absolute;
+	left: -35px;
+	bottom: 60px;
+}
+
+/* Section about us */
+section.about-us {
+	overflow: hidden;
+}
+
+.abt-cir {
+	position: relative;
+	left: -11rem;
+	height: 30rem;
+	width: 30rem;
+	background-color: #598463;
+	border-radius: 50%;
+}
+
+.abt-cir img {
+	position: absolute;
+	top: 75%;
+	right: 90px;
+	transform: translate(70%, -70%);
+	width: 100%;
+}
+
+.about-us-col-2 {
+	position: relative;
+}
+
+.about-us-col-2 .wrapper {
+	width: 100%;
+	padding: 0 40px 0 40px;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+
+.about-us-col-2 .button {
+	background-color: #387546;
+}
+
+/* Section Menu */
+section.menu .wrapper {
+	text-align: center;
+	padding-top: 60px;
+}
+
+section.menu .row {
+	display: flex;
+	align-items: flex-end;
+}
+
+section.menu .card {
+	box-shadow: 5px 10px 18px #888888;
+}
+
+/* Section client */
+section.clients h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+section.clients .row-1 {
+	margin-bottom: 20px;
+}
+
+section.clients .row-2 {
+	margin-bottom: 40px;
+}
+
+section.clients img {
+	width: 100%;
+}
+
+/* Section contact us */
+section.contact-us {
+	padding-top: 70px;
+}
+
+section.contact-us .card-contact-wrapper {
+	width: 100%;
+}
+
+section.contact-us .card-contact-wrapper .card-contact {
+	margin: 0 auto 100px auto;
+	height: 170px;
+	width: 350px;
+	box-shadow: 0.3em 0.6em 1em rgba(0, 0, 0, 0.3);
+	border-radius: 78px;
+	text-align: center;
+}
+
+.card-contact .icon {
+	width: 40px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+/* Section footer */
+section.footer {
+	overflow: hidden;
+	padding-top: 80px;
+	height: 300px;
+}
+
+.footer {
+	position: relative;
+}
+
+.footer-nav {
+	position: absolute;
+	top: 15rem;
+	right: 50%;
+	transform: translate(50%, -50%);
+	font-size: larger;
+	z-index: 1000;
+}
+
+.footer-nav a {
+	padding: 25px;
+	color: white;
+}
+
+.footer-nav .social-m-icons {
+	width: fit-content;
+	margin: 20px auto 0px auto;
+}
+
+.footer-nav .social-m-icons img {
+	padding: 15px;
+	width: 60px;
+}
+
+.ftr-cir {
+	/* margin: 0px auto 0px auto; */
+	position: relative;
+	left: -47.5rem;
+	height: 185rem;
+	width: 185rem;
+	background-color: #598463;
+	border-radius: 50%;
+}
+
+.logo-cir {
+	position: absolute;
+	top: -70px;
+	left: 87.9rem;
+	height: 10rem;
+	width: 10rem;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.logo-cir {
+	position: relative;
+}
+
+.logo-cir .icon-logo {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	width: 70%;
+}
+
+/* Common css */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: unset;
+}
+
+.button:hover {
+	color: white;
+	-webkit-box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.4);
+}
+
+.p-orange {
+	color: #f19a33;
+}
+
+.item-wrapper {
+	width: fit-content;
+	padding-bottom: 50px;
+	margin: 0 auto 0 auto;
+}
