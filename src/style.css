@@ -6,9 +6,9 @@
 
 .main-container {
 	/* height: 200px; */
-	max-width: 2300px;
+	max-width: 1300px;
 	overflow-x: hidden;
-	/* margin: 0 auto 10px auto; */
+	margin: 0 auto 0px auto;
 }
 
 nav {
@@ -139,6 +139,7 @@ section.menu .row {
 }
 
 section.menu .card {
+	width: 18rem;
 	box-shadow: 5px 10px 18px #888888;
 }
 
@@ -219,12 +220,17 @@ section.footer {
 	width: 60px;
 }
 
-.ftr-cir {
-	/* margin: 0px auto 0px auto; */
+.footer {
 	position: relative;
-	left: -47.5rem;
-	height: 185rem;
-	width: 185rem;
+}
+
+.ftr-cir {
+	position: absolute;
+	top: 90rem;
+	right: 50%;
+	transform: translate(50%, -50%);
+	height: 170rem;
+	width: 170rem;
 	background-color: #598463;
 	border-radius: 50%;
 }
@@ -232,7 +238,7 @@ section.footer {
 .logo-cir {
 	position: absolute;
 	top: -70px;
-	left: 87.9rem;
+	left: 80.5rem;
 	height: 10rem;
 	width: 10rem;
 	background-color: white;
@@ -276,4 +282,86 @@ a:hover {
 	width: fit-content;
 	padding-bottom: 50px;
 	margin: 0 auto 0 auto;
+}
+
+/* Media queary */
+@media screen and (max-width: 1180px) {
+	.main-cir {
+		top: -10rem;
+		left: -5rem;
+	}
+}
+
+@media screen and (max-width: 1137px) {
+	/* .contact-us .row {
+		padding-right: 10px;
+	} */
+
+	.main-cir {
+		left: -2rem;
+	}
+
+	section.contact-us .card-contact-wrapper .card-contact {
+		height: 127px;
+		width: 242px;
+	}
+
+	.card-contact .icon {
+		width: 31px;
+		margin-top: 10px;
+		margin-bottom: 16px;
+	}
+}
+
+@media screen and (max-width: 963px) {
+	.main .row {
+		margin-bottom: 100px;
+	}
+
+	.main-cir {
+		top: -6rem;
+		left: -2rem;
+		height: 38rem;
+		width: 38rem;
+	}
+
+	.main-cir img {
+		top: 66%;
+		right: 73%;
+	}
+
+	.abt-cir {
+		left: -15rem;
+	}
+
+	.menu .item-wrapper .card {
+		width: 15rem;
+	}
+}
+
+@media screen and (max-width: 825px) {
+	.abt-cir img {
+		top: 70%;
+		width: 79%;
+	}
+
+	.menu .item-wrapper .card {
+		width: 14rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	section.main .col-md-6:first-child {
+		z-index: 1000;
+		width: 400px;
+	}
+
+	.main-cir {
+		/* top: -30rem; */
+		left: 20rem;
+		/* height: 50rem;
+		width: 50rem;
+		background-color: #387546;
+		border-radius: 50%; */
+	}
 }
