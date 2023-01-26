@@ -17,25 +17,31 @@
 
 		<!-- My stylesheet -->
 		<link rel="stylesheet" href="./src/style.css" />
+
+		<!-- My Script -->
+		<script defer src="./src/script.js"></script>
 	</head>
 	<body>
-		<div class="main-container">
-			<!-- Navigation -->
-			<nav>
-				<div class="nav-wrapper">
-					<img class="logo" src="./src/img/img-logo-desk.png" alt="Company Logo" />
-					<div class="nav-items">
-						<a href="">About us</a>
-						<a href="">Menu</a>
-						<a href="">Contact</a>
-					</div>
+		<!-- Navigation -->
+		<nav>
+			<i class="bi bi-list hamburger-btn-open"></i>
+			<i class="bi bi-x-lg hamburger-btn-close hide"></i>
+			<div class="nav-wrapper">
+				<img class="logo" src="./src/img/img-logo-desk.png" alt="Company Logo" />
+				<div class="nav-items hide-in-500px">
+					<a href="#about-us">About us</a>
+					<a href="#menu">Menu</a>
+					<a href="#contact-us">Contact</a>
 				</div>
-			</nav>
+			</div>
+		</nav>
 
+		<!-- Main container -->
+		<div class="main-container">
 			<!-- Section Main -->
 			<section class="main">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="main-text-wrapper">
 						<h1>
 							Healthy & Fresh <br />
 							Food For Your
@@ -43,40 +49,41 @@
 
 						<p>Created for lovers of healthy, delicious and non-obvious food.</p>
 
-						<a class="button" href="#">Check Menu <i class="bi bi-arrow-right"></i></a>
+						<a class="button" href="#menu">Check Menu <i class="bi bi-arrow-right"></i></a>
 					</div>
 
-					<div class="col-md-6">
+					<div class="main-cir-wrapper">
 						<div class="main-cir">
 							<img src="./src/img/img-background-desk.png" alt="Image Salade Plate" />
 						</div>
 					</div>
 				</div>
+
 				<img class="img-chilli" src="./src/img/img-chilli-desk.png" alt="Image Chilli" />
 			</section>
 
 			<!-- Section About us -->
-			<section class="about-us">
+			<section class="about-us" id="about-us">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="abt-cir-wrapper">
 						<div class="abt-cir">
 							<img src="./src/img/img-vegetable_table-desk.png" alt="Image Vegetable Table" />
 						</div>
 					</div>
 
-					<div class="col-md-6 about-us-col-2">
+					<div class="about-us-col-2">
 						<div class="wrapper">
 							<p class="p-orange">About us</p>
 							<h2>Few words about us</h2>
 							<p>We are not ordinary food truck. We create a place overflowing with positive energy that it expresses important tous values. Get to know them specifically.</p>
-							<a class="button" href="#">Check Menu <i class="bi bi-arrow-right"></i></a>
+							<a class="button" href="#menu">Check Menu <i class="bi bi-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- Section Menu -->
-			<section class="menu">
+			<section class="menu" id="menu">
 				<div class="wrapper">
 					<p class="p-orange">Menu</p>
 					<h2>Explore Our Best Food</h2>
@@ -122,33 +129,30 @@
 			<!-- Section Happy Client -->
 			<section class="clients">
 				<h2>Good food = happy clients</h2>
-				<div class="row row-1">
-					<div class="col-md-4">
+				<div class="row">
+					<div class="col-6 col-md-4 client">
 						<img src="./src/img/img-galery_photo1-desk.png" alt="Client Photo 1" />
 					</div>
-					<div class="col-md-4">
+					<div class="col-6 col-md-4 client">
 						<img src="./src/img/img-galery_photo2-desk.png" alt="Client Photo 2" />
 					</div>
-					<div class="col-md-4">
+					<div class="col-6 col-md-4 client">
 						<img src="./src/img/img-galery_photo3-desk.png" alt="Client Photo 3" />
 					</div>
-				</div>
-
-				<div class="row row-2">
-					<div class="col-md-4">
+					<div class="col-6 col-md-4 client">
 						<img src="./src/img/img-galery_photo4-desk.png" alt="Client Photo 4" />
 					</div>
-					<div class="col-md-4">
+					<div class="col-6 col-md-4 client">
 						<img src="./src/img/img-galery_photo5-desk.png" alt="Client Photo 5" />
 					</div>
-					<div class="col-md-4">
+					<div class="col-6 col-md-4 client">
 						<img src="./src/img/img-galery_photo6-desk.png" alt="Client Photo 6" />
 					</div>
 				</div>
 			</section>
 
 			<!-- Section Contact us -->
-			<section class="contact-us">
+			<section class="contact-us" id="contact-us">
 				<div class="row">
 					<div class="col-md-4">
 						<div class="card-contact-wrapper">
@@ -183,9 +187,11 @@
 			<!-- Section footer -->
 			<section class="footer">
 				<div class="footer-nav">
-					<a href="">About us</a>
-					<a href="">Menu</a>
-					<a href="">Contact</a>
+					<div class="footer-nav-wrapper">
+						<a href="">About us</a>
+						<a href="">Menu</a>
+						<a href="">Contact</a>
+					</div>
 
 					<div class="social-m-icons">
 						<img src="./src/icon/icon-facebook.svg" alt="" class="facebook" />
